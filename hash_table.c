@@ -15,7 +15,8 @@ static ht_item* ht_new_item(const char* k, const char* v) {
 }
 
 ht_hash_table* ht_new() {
-  ht_hash_table* ht = malloc(sizeof(ht_hash_table));
+  ht_hash_table* ht;
+  ht = malloc(sizeof(ht_hash_table));
 
   ht->size = 53;
   ht->count = 0;
